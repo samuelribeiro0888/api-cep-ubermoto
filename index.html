@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de Frete</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Moto<span>Frete</span>
+            </div>
+
+            <button id="darkMode">
+                🌙
+            </button>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="tag">
+                    CALCULADORA DE FRETE
+                </span>
+
+                <h1>
+                    Descubra quanto custa
+                    <span>seu frete.</span>
+                </h1>
+
+                <p>
+                    Informe o CEP do destino e veja a distância
+                    entre a UNINASSAU Parangaba e o local de entrega.
+                </p>
+
+            </div>
+
+
+            <div class="calculator">
+
+                <h2>
+                    Calcular frete
+                </h2>
+
+                <p class="origin">
+                    📍 Origem:
+                    <strong>UNINASSAU Parangaba</strong>
+                </p>
+
+
+                <label for="cep">
+                    CEP de destino
+                </label>
+
+                <div class="cep-box">
+
+                    <input
+                        type="text"
+                        id="cep"
+                        maxlength="9"
+                        placeholder="Ex.: 60740-020"
+                    >
+
+                    <button id="buscarCep">
+                        Buscar
+                    </button>
+
+                </div>
+
+
+                <div id="loading" class="loading hidden">
+                    Calculando...
+                </div>
+
+
+                <div id="endereco" class="address hidden">
+
+                    <h3>
+                        📍 Destino
+                    </h3>
+
+                    <p id="logradouro"></p>
+                    <p id="bairro"></p>
+                    <p id="cidade"></p>
+
+                </div>
+
+
+                <div id="resultado" class="result hidden">
+
+                    <div class="result-item">
+
+                        <span>
+                            Distância
+                        </span>
+
+                        <strong id="distancia">
+                            --
+                        </strong>
+
+                    </div>
+
+
+                    <div class="result-item">
+
+                        <span>
+                            Estimativa Moto
+                        </span>
+
+                        <strong id="uber">
+                            --
+                        </strong>
+
+                    </div>
+
+
+                    <div class="result-item total">
+
+                        <span>
+                            FRETE
+                        </span>
+
+                        <strong id="frete">
+                            --
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <p class="disclaimer">
+                    * O valor apresentado é uma estimativa acadêmica
+                    baseada na distância da rota e em uma tarifa de
+                    moto configurada no sistema.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="info">
+
+            <div class="info-card">
+
+                <span>01</span>
+
+                <h3>
+                    Digite o CEP
+                </h3>
+
+                <p>
+                    Informe o CEP do endereço onde a entrega será realizada.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span>02</span>
+
+                <h3>
+                    Consulte o endereço
+                </h3>
+
+                <p>
+                    O sistema consulta automaticamente os dados do CEP.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span>03</span>
+
+                <h3>
+                    Veja o valor
+                </h3>
+
+                <p>
+                    O sistema calcula a rota e apresenta uma estimativa
+                    do valor do frete.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Projeto acadêmico • Calculadora de Frete
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
